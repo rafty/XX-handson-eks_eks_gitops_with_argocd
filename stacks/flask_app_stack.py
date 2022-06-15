@@ -8,7 +8,7 @@ from aws_cdk import aws_iam
 from util.configure.config import Config
 
 
-class FlaskBackendAppStack(Stack):
+class FlaskAppStack(Stack):
 
     def __init__(
             self,
@@ -34,9 +34,9 @@ class FlaskBackendAppStack(Stack):
             'apiVersion': 'v1',
             'kind': 'Namespace',
             'metadata': {
-                'name': self.config.flask_backend.namespace,
+                'name': self.config.flask_app.namespace,
                 'labels': {
-                    'name': self.config.flask_backend.namespace
+                    'name': self.config.flask_app.namespace
                 }
             }
         }

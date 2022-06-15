@@ -11,7 +11,6 @@ class ConfigEks:
     def instance_type(self):
         return self.config['instance_type']
 
-
     @property
     def addon_enable_cwmetrics(self):
         return self.config.get('addon_enable_cwmetrics')

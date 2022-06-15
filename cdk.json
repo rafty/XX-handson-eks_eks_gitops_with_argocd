@@ -57,7 +57,7 @@
       },
       "eks": {
           "name": "gitops_eks",
-          "instance_type": "t3.small",
+          "instance_type": "t3.large",
           "addon_enable_cwmetrics": true,
           "addon_enable_cwlogs": true,
           "addon_enable_awslbclt": true,
